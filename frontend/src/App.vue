@@ -1,13 +1,16 @@
 <template>
-  <p></p>
+  <NavigationBar 
+    site_name="compareify" 
+  />
 </template>
 
 <script>
-
+import NavigationBar from './components/NavigationBar.vue';
 
 export default {
   name: 'App',
   components: {
+    NavigationBar,
     
   }
 }
