@@ -1,16 +1,14 @@
 <template>
-    <div class="navigation-bar container-fluid p-0">
-        <div class="site-name h-100 col-2 d-flex align-items-center justify-content-end float-start ">
+    <div class="navigation-bar container-fluid d-flex">
+        <div class="site-name h-100 col-6 d-flex justify-content-start align-items-center ">
             <h1 class="text-capitalize" v-text="site_name"></h1>
         </div>
 
-        <div class="navs h-100 col-1 d-flex align-items-center justify-content-center float-end ">
+        <div class="navs h-100 col-6 d-flex justify-content-end align-items-center">
             <router-link to="/">about us</router-link>
             <router-view></router-view>
         </div>
-
     </div>
-  
 </template>
 
 <script>
@@ -30,6 +28,7 @@ export default {
 .navigation-bar{
     background: var(--ion-color-primary);
     height: 50px;
+    padding: 0px 50px 0px 50px;
 }
 .navigation-bar .site-name h1{
     font-family: 'Pacifico', cursive;
