@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstefan01/compareify.git"
+  },
+  "author": "cstefan01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cstefan01/compareify/issues"
+  },
+  "homepage": "https://github.com/cstefan01/compareify#readme"
+}
