@@ -1,13 +1,16 @@
 <template>
   <div class="page">
-    <NavigationBar 
-      site_name="compareify" 
-    />
+    <NavigationBar site_name="compareify" />
     <MainHero />
 
     <MainContent />
 
-    <MainFooter 
+   <ToastMessage 
+      title = "No product to be shown"
+      message = "Search for a product now"
+   />
+
+    <MainFooter
       copyright_year="2023"
       copyright_author_name="Claudiu Stefan"
       copyright_author_link="https://github.com/cstefan01"
@@ -16,29 +19,28 @@
 </template>
 
 <script>
-import NavigationBar from './components/NavigationBar.vue';
-import MainHero from './components/MainHero.vue';
-import MainFooter from './components/MainFooter.vue';
-import MainContent from './components/MainContent.vue';
-
+import ToastMessage from './components/ToastMessage.vue'
+import NavigationBar from "./components/NavigationBar.vue";
+import MainHero from "./components/MainHero.vue";
+import MainFooter from "./components/MainFooter.vue";
+import MainContent from "./components/MainContent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavigationBar,
     MainHero,
     MainFooter,
     MainContent,
-    
-  }
-}
+    ToastMessage
+  },
+};
 </script>
 
 <style>
-.page{
+.page {
   display: flex;
   flex-direction: column;
   /* background: var(--ion-color-primary); */
 }
-
 </style>
