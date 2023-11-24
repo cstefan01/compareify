@@ -33,7 +33,7 @@ export default {
 .toast-message{
     display: flex;
     min-height: 450px;
-    background: yellow;
+    background: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;

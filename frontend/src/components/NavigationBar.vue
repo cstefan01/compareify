@@ -7,8 +7,7 @@
     </div>
 
     <div class="navs h-100 col-6 d-flex justify-content-end align-items-center">
-      <router-link to="/">about us</router-link>
-      <router-view></router-view>
+      <router-link to="/about">about us</router-link>
     </div>
   </div>
 </template>
@@ -45,4 +44,6 @@ router-link {
   font-family: "Ubuntu", sans-serif;
   animation: fade-in 3s ease-out;
 }
+
+
 </style>
