@@ -10,8 +10,14 @@ const routes = [
         path: '/about',
         name: 'about',
         component: () => import('../pages/AboutPage.vue')
+    },
+    {
+        path: '/search',
+        name: 'search',
+        component: () => import('../pages/SearchResultPage.vue'),
     }
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),
